@@ -85,7 +85,7 @@ RUN sudo ln -s /etc/nagios3/objects/ /etc/nagios3/conf.d/
 
 RUN sudo mkdir -p /usr/local/nagios/var/spool/checkresults
 RUN sudo chown nagios:nagios /usr/local/nagios/var/spool/checkresults
-RUN chown -R nagios:nagios /usr/lib/nagios/plugins/
+RUN chown -R root:nagios /usr/lib/nagios/plugins/
 RUN chmod u+s /usr/lib/nagios/plugins/*
 
 # Keep for debugging
