@@ -20,8 +20,8 @@ RUN yum -y install epel-release; yum clean all
 # Download and install rpm package
 #RUN rpm -ivh https://mathias-kettner.de/support/${CMK_VERSION}/check-mk-raw-${CMK_VERSION}-el7-${CMK_DOWNLOADNR}.x86_64.rpm
 
-COPY ./check-mk-raw-1.4.0p19-el7-66.x86_64.rpm /tmp/
-RUN yum install -y /tmp/check-mk-raw-1.4.0p19-el7-66.x86_64.rpm
+COPY ./check-mk-raw-1.4.0p21-el7-68.x86_64.rpm /tmp/
+RUN yum install -y /tmp/check-mk-raw-1.4.0p21-el7-68.x86_64.rpm
 
 
 # Additional packages for own usages

@@ -35,7 +35,8 @@ RUN apt-get install -y \
 #nagios_command_pipe_path    = '/var/log/nagios/rw/nagios.cmd'
 #which could be change during install in
 #/root/.check_mk_setup.conf
-ENV CMK_VERSION 1.2.8p26
+#ENV CMK_VERSION 1.2.8p26
+ENV CMK_VERSION 1.2.6p2
 ########### TODD ###########
 
 ENV CMK_FILE check_mk-$CMK_VERSION.tar.gz
